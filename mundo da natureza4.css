@@ -1,0 +1,124 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #819486;
+}
+
+
+.banner {
+  background-image: url('https://media.istockphoto.com/id/1337232523/pt/foto/high-angle-view-of-a-lake-and-forest.jpg?s=612x612&w=0&k=20&c=8kzVAVb6PQke6clqNHSHXJjRzqp5v2X7XOrib9Uw9ZI=');
+  background-size: cover;
+  background-position: center;
+  color: rgb(161, 169, 238);
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #aaffaa;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgb(113, 214, 221);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.curiosidades {
+  background: #6fe779;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-section {
+  background: rgb(103, 171, 235);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.form-section button {
+  padding: 10px;
+  background: green;
+  color: rgb(122, 190, 176);
+  border: none;
+  cursor: pointer;
+}
+
+
+.footer {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

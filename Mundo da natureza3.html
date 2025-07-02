@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo da Natureza</title>
+  <link rel="stylesheet" href="mundo da natureza4.css" />
+</head>
+<body>
+
+
+  <header class="banner">
+    <div class="logo"> 🌿 Natureza</div>
+    <nav class="menu">
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <main class="grid-layout">
+      <section class="card"> <h2>Floresta tropicais</h2> <br>A floresta tropical é uma formação vegetal típica de regiões de clima quente e úmido que apresenta grande diversidade de espécies animais e vegetais. As florestas tropicais estão geograficamente localizadas na faixa tropical do globo, entre as linhas imaginárias Trópico de Câncer e Trópico de Capricórnio.</section>
+      <section class="card">  <h2>Oceanos e mares</h2> <br>Os mares e oceanos correspondem às massas líquidas do planeta Terra que banham os continentes, ao lado dos rios, lagos e lagoas.
+
+No entanto, eles são formados por grandes porções de água salgada e cobrem cerca de 71% da superfície terrestre.</section>
+      <section class="card"> <h2>Animais silvestres</h2> <br>Animais silvestres são aqueles animais que não passaram pelo processo de domesticação, ou seja, são animais que ainda não estão acostumados com a convivência com seres humanos, bem como também não estão adaptados às condições de cativeiro. Esses animais podem ter comportamentos agressivos quando capturados e, ao serem colocados em cativeiro, podem não se desenvolver e reproduzir de maneira adequada. Isso significa que animais silvestres não conseguem viver com os seres humanos da mesma forma que os domesticados.</section>
+      <section class="card"> <h2>Plantas medicinais</h2><br>A Política Nacional de Plantas Medicinais e Fitoterápicos - PNPMF constitui parte essencial das políticas públicas de saúde, meio ambiente, desenvolvimento econômico e social para alcançar a implementação de ações capazes de promover melhorias na qualidade de vida da população brasileira. 
+
+As ações decorrentes dessa política são consideradas fundamentais para a melhoria do acesso da população a plantas medicinais e fitoterápicos.</section>
+    </main>
+
+    <aside class="curiosidades">
+      <h2>Curiosidades</h2>
+      <ul>
+        <li>O Brasil possui a maior biodiversidade do planeta.</li>
+        <li>Existem mais de 300 mil espécies de plantas conhecidas.</li>
+        <li>A Amazônia é a maior floresta tropical do mundo.</li>
+        <li>As curiosidades sobre a natureza dizem respeito ao mundo natural. Ou seja, refere-se aos fenômenos do mundo físico e também à vida em geral. Portanto, diz respeito ao que não inclui objetos e obras humanas. Ademais, também trata do domínio dos diversos tipos de seres vivos complexos, como plantas e animais.
+
+Curiosamente, a palavra natureza parte do latim natura. Por sua vez, significa qualidade essencial, disposição inata e o próprio Universo. Porém, a palavra latina tem origem no grego physis cuja definição envolve a origem de plantas e animais. Apesar disso, entende-se a definição de natureza como algo de maior aprofundamento a partir da aderência do método científico.
+
+Ou seja, o desenvolvimento do método científico moderno aprimorou os conceitos, divisões, ordens e conceitos básicos que dizem respeito às curiosidades sobre a natureza. Sendo assim, conceitos como energia, vida, matéria e outras definições fundamentais moldaram os limites entre o que é natureza e o que não é. Por fim, conheça algumas curiosidades a seguir:</li>
+      </ul>
+    </aside>
+  </div>
+
+
+  <section class="form-section">
+    <h2>Fale Conosco</h2>
+    <form id="contatoForm">
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="text" name="cpf" placeholder="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" />
+      <input type="date" name="dataNascimento" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <input type="tel" name="telefone" placeholder="Telefone (xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" />
+      <select name="assunto" required>
+        <option value="">Selecione o assunto</option>
+        <option value="duvida">Dúvida</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="elogio">Elogio</option>
+      </select>
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <label>
+        <input type="checkbox" name="aceite" required /> Aceito os termos de uso
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div>Sobre nós<br />Amamos a natureza!</div>
+    <div>Contato<br />Natureza@gmail.com</div>
+    <div>Redes sociais<br />Instagram | Facebook</div>
+  </footer>
+
+  <script>
+    document.getElementById('contatoForm').addEventListener('submit', function(e) {
+      const email = this.email.value;
+      const checkbox = this.aceite.checked;
+      if (!email.includes('@') || !checkbox) {
+        alert('Preencha corretamente os campos obrigatórios.');
+        e.preventDefault();
+      }
+    });
+  </script>
+
+</body>
+</html>
